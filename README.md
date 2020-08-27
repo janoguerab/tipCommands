@@ -42,3 +42,13 @@ Finalmente, installar los rmps que se han compilado:
 cd /usr/src/redhat/RPMS/x86_64 (replace ‘x86_64’ with your arch, if necessary)
 rpm -Uvh fuse-sshfs-1.7-2.x86_64.rpm
   ```
+
+## For backups of database using rsync - exporter
+  ```
+# rsync --help | grep remove-
+     --remove-source-files   sender removes synchronized files (non-dirs)
+  ```
+Si no se encuentra la opción: --remove-source-files es neceserio instalar una versión actualizada de rsync
+  ```
+  # yum install rsync
+  ```
