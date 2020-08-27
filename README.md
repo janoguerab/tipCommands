@@ -52,3 +52,19 @@ Si no se encuentra la opción: --remove-source-files es neceserio instalar una v
   ```
   # yum install rsync
   ```
+
+# SET mirros from Fedora in /etc/yum.repos.d/CentOS-Base.repo
+
+[extras]
+name=Fedora Core 6 Extras
+mirrorlist=http://mirrors.dotsrc.org/fedora-buffet/archive/fedora/linux/extras/6/$basearch
+enabled=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-extras
+gpgcheck=0
+
+[fc6-updates]
+name=Fedora Core 6 Updates
+mirrorlist=http://mirrors.dotsrc.org/fedora-buffet/archive/fedora/linux/updates/6/$basearch
+enabled=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-extras
+gpgcheck=0
