@@ -54,7 +54,7 @@ Si no se encuentra la opción: --remove-source-files es neceserio instalar una v
   ```
 
 # SET mirros from Fedora in /etc/yum.repos.d/CentOS-Base.repo
-
+ ```sh
 [extras]
 name=Fedora Core 6 Extras
 mirrorlist=http://mirrors.dotsrc.org/fedora-buffet/archive/fedora/linux/extras/6/$basearch
@@ -68,3 +68,9 @@ mirrorlist=http://mirrors.dotsrc.org/fedora-buffet/archive/fedora/linux/updates/
 enabled=0
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-extras
 gpgcheck=0
+ ```
+ 
+ en la consola
+  ```
+ # yum clean all
+  ```
