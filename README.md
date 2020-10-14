@@ -74,3 +74,14 @@ gpgcheck=0
   ```
  # yum clean all
   ```
+## smtp Connection error
+TYPO3 Exception: Connection could not be established with host smtp.gmail.com [Connection timed out #110]
+
+    Check if httpd_can_sendmail is on , run this getsebool httpd_can_sendmail
+        When you get: httpd_can_sendmail --> off , run setsebool -P httpd_can_sendmail 1
+        When you get: httpd_can_sendmail --> on that's fine move on step 2.
+
+    Check also if httpd_can_network_connect is on, run getsebool httpd_can_network_connect
+        When you get httpd_can_network_connect --> off run setsebool -P httpd_can_network_connect 1
+        When you get: httpd_can_network_connect --> on that's fine move on step 3.
+    Use the following settings for smtp : 'host' => '64.233.166.108' 'port' => '465'
