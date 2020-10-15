@@ -88,13 +88,17 @@ TYPO3 Exception: Connection could not be established with host smtp.gmail.com [C
 
 
 ## Estadísitcas en Setup de la Template
-page.12 = TEXT
-page.12.value (
+```
+	page.12 = TEXT
+	page.12.value (
 
-<!-- Histats.com  START  (aync)-->
-<script type="text/javascript">
-	...
-</script>
-<noscript><a href="/" target="_blank">...</a></noscript>
-<!-- Histats.com  END  -->
-)
+	<!-- Histats.com  START  (aync)-->
+	<script type="text/javascript">
+		...
+	</script>
+	<noscript>
+		<a href="/" target="_blank">...</a>
+	</noscript>
+	<!-- Histats.com  END  -->
+	)
+```
