@@ -85,3 +85,16 @@ TYPO3 Exception: Connection could not be established with host smtp.gmail.com [C
         When you get httpd_can_network_connect --> off run setsebool -P httpd_can_network_connect 1
         When you get: httpd_can_network_connect --> on that's fine move on step 3.
     Use the following settings for smtp : 'host' => '64.233.166.108' 'port' => '465'
+
+
+## Estadísitcas en Setup de la Template
+page.12 = TEXT
+page.12.value (
+
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">
+	...
+</script>
+<noscript><a href="/" target="_blank">...</a></noscript>
+<!-- Histats.com  END  -->
+)
